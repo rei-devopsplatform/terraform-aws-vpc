@@ -26,40 +26,40 @@ categories:
 license: "APACHE2"
 
 # Canonical GitHub repo
-github_repo: cloudposse/terraform-aws-vpc
+github_repo: rei-devopsplatform/terraform-aws-vpc
 
 # Badges to display
 badges:
   - name: "Codefresh Build Status"
-    image: "https://g.codefresh.io/api/badges/pipeline/cloudposse/terraform-modules%2Fterraform-aws-vpc?type=cf-1"
-    url: "https://g.codefresh.io/public/accounts/cloudposse/pipelines/5d04407b1fc622c0cf6d3df8"
+    image: "https://g.codefresh.io/api/badges/pipeline/rei-devopsplatform/terraform-modules%2Fterraform-aws-vpc?type=cf-1"
+    url: "https://g.codefresh.io/public/accounts/rei-devopsplatform/pipelines/5d04407b1fc622c0cf6d3df8"
   - name: "Latest Release"
-    image: "https://img.shields.io/github/release/cloudposse/terraform-aws-vpc.svg"
-    url: "https://github.com/cloudposse/terraform-aws-vpc/releases/latest"
+    image: "https://img.shields.io/github/release/rei-devopsplatform/terraform-aws-vpc.svg"
+    url: "https://github.com/rei-devopsplatform/terraform-aws-vpc/releases/latest"
   - name: "Slack Community"
-    image: "https://slack.cloudposse.com/badge.svg"
-    url: "https://slack.cloudposse.com"
+    image: "https://slack.rei-devopsplatform.com/badge.svg"
+    url: "https://slack.rei-devopsplatform.com"
 
 related:
   - name: "terraform-aws-vpc-peering"
     description: "Terraform module to create a peering connection between two VPCs"
-    url: "https://github.com/cloudposse/terraform-aws-vpc-peering"
+    url: "https://github.com/rei-devopsplatform/terraform-aws-vpc-peering"
 
   - name: "terraform-aws-kops-vpc-peering"
     description: "Terraform module to create a peering connection between a backing services VPC and a VPC created by Kops"
-    url: "https://github.com/cloudposse/terraform-aws-kops-vpc-peering"
+    url: "https://github.com/rei-devopsplatform/terraform-aws-kops-vpc-peering"
 
   - name: "terraform-aws-dynamic-subnets"
     description: "Terraform module for public and private subnets provisioning in existing VPC"
-    url: "https://github.com/cloudposse/terraform-aws-dynamic-subnets"
+    url: "https://github.com/rei-devopsplatform/terraform-aws-dynamic-subnets"
 
   - name: "terraform-aws-multi-az-subnets"
     description: "Terraform module for multi-AZ public and private subnets provisioning"
-    url: "https://github.com/cloudposse/terraform-aws-multi-az-subnets"
+    url: "https://github.com/rei-devopsplatform/terraform-aws-multi-az-subnets"
 
   - name: "terraform-aws-named-subnets"
     description: "Terraform module for named subnets provisioning."
-    url: "https://github.com/cloudposse/terraform-aws-named-subnets"
+    url: "https://github.com/rei-devopsplatform/terraform-aws-named-subnets"
 
 # Short description of this project
 description: |-
@@ -69,7 +69,7 @@ description: |-
 examples: |-
   ```hcl
   module "vpc" {
-    source     = "git::https://github.com/cloudposse/terraform-aws-vpc.git?ref=master"
+    source     = "git::https://github.com/rei-devopsplatform/terraform-aws-vpc.git?ref=master"
     namespace  = "cp"
     stage      = "prod"
     name       = "app"
@@ -77,11 +77,11 @@ examples: |-
   }
   ```
 
-  Full example with [`terraform-aws-dynamic-subnets`](https://github.com/cloudposse/terraform-aws-dynamic-subnets.git):
+  Full example with [`terraform-aws-dynamic-subnets`](https://github.com/rei-devopsplatform/terraform-aws-dynamic-subnets.git):
 
   ```hcl
   module "vpc" {
-    source     = "git::https://github.com/cloudposse/terraform-aws-vpc.git?ref=master"
+    source     = "git::https://github.com/rei-devopsplatform/terraform-aws-vpc.git?ref=master"
     namespace  = "eg"
     stage      = "prod"
     name       = "app"
@@ -89,7 +89,7 @@ examples: |-
   }
 
   module "dynamic_subnets" {
-    source             = "git::https://github.com/cloudposse/terraform-aws-dynamic-subnets.git?ref=master"
+    source             = "git::https://github.com/rei-devopsplatform/terraform-aws-dynamic-subnets.git?ref=master"
     namespace          = "eg"
     stage              = "prod"
     name               = "app"

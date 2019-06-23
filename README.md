@@ -3,7 +3,7 @@
 
 [![Cloud Posse][logo]](https://cpco.io/homepage)
 
-# terraform-aws-vpc [![Codefresh Build Status](https://g.codefresh.io/api/badges/pipeline/cloudposse/terraform-modules%2Fterraform-aws-vpc?type=cf-1)](https://g.codefresh.io/public/accounts/cloudposse/pipelines/5d04407b1fc622c0cf6d3df8) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-vpc.svg)](https://github.com/cloudposse/terraform-aws-vpc/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
+# terraform-aws-vpc [![Codefresh Build Status](https://g.codefresh.io/api/badges/pipeline/cloudposse/terraform-modules%2Fterraform-aws-vpc?type=cf-1)](https://g.codefresh.io/public/accounts/cloudposse/pipelines/5d04407b1fc622c0cf6d3df8) [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-aws-vpc.svg)](https://github.com/rei-devopsplatform/terraform-aws-vpc/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
 
 
 Terraform module to provision a VPC with Internet Gateway.
@@ -48,7 +48,7 @@ We literally have [*hundreds of terraform modules*][terraform_modules] that are 
 
 ```hcl
 module "vpc" {
-  source     = "git::https://github.com/cloudposse/terraform-aws-vpc.git?ref=master"
+  source     = "git::https://github.com/rei-devopsplatform/terraform-aws-vpc.git?ref=master"
   namespace  = "cp"
   stage      = "prod"
   name       = "app"
@@ -56,11 +56,11 @@ module "vpc" {
 }
 ```
 
-Full example with [`terraform-aws-dynamic-subnets`](https://github.com/cloudposse/terraform-aws-dynamic-subnets.git):
+Full example with [`terraform-aws-dynamic-subnets`](https://github.com/rei-devopsplatform/terraform-aws-dynamic-subnets.git):
 
 ```hcl
 module "vpc" {
-  source     = "git::https://github.com/cloudposse/terraform-aws-vpc.git?ref=master"
+  source     = "git::https://github.com/rei-devopsplatform/terraform-aws-vpc.git?ref=master"
   namespace  = "eg"
   stage      = "prod"
   name       = "app"
@@ -68,7 +68,7 @@ module "vpc" {
 }
 
 module "dynamic_subnets" {
-  source             = "git::https://github.com/cloudposse/terraform-aws-dynamic-subnets.git?ref=master"
+  source             = "git::https://github.com/rei-devopsplatform/terraform-aws-dynamic-subnets.git?ref=master"
   namespace          = "eg"
   stage              = "prod"
   name               = "app"
@@ -128,7 +128,7 @@ Available targets:
 
 ## Share the Love 
 
-Like this project? Please give it a ★ on [our GitHub](https://github.com/cloudposse/terraform-aws-vpc)! (it helps us **a lot**) 
+Like this project? Please give it a ★ on [our GitHub](https://github.com/rei-devopsplatform/terraform-aws-vpc)! (it helps us **a lot**) 
 
 Are you using this project or any of our other projects? Consider [leaving a testimonial][testimonial]. =)
 
@@ -137,11 +137,11 @@ Are you using this project or any of our other projects? Consider [leaving a tes
 
 Check out these related projects.
 
-- [terraform-aws-vpc-peering](https://github.com/cloudposse/terraform-aws-vpc-peering) - Terraform module to create a peering connection between two VPCs
-- [terraform-aws-kops-vpc-peering](https://github.com/cloudposse/terraform-aws-kops-vpc-peering) - Terraform module to create a peering connection between a backing services VPC and a VPC created by Kops
-- [terraform-aws-dynamic-subnets](https://github.com/cloudposse/terraform-aws-dynamic-subnets) - Terraform module for public and private subnets provisioning in existing VPC
-- [terraform-aws-multi-az-subnets](https://github.com/cloudposse/terraform-aws-multi-az-subnets) - Terraform module for multi-AZ public and private subnets provisioning
-- [terraform-aws-named-subnets](https://github.com/cloudposse/terraform-aws-named-subnets) - Terraform module for named subnets provisioning.
+- [terraform-aws-vpc-peering](https://github.com/rei-devopsplatform/terraform-aws-vpc-peering) - Terraform module to create a peering connection between two VPCs
+- [terraform-aws-kops-vpc-peering](https://github.com/rei-devopsplatform/terraform-aws-kops-vpc-peering) - Terraform module to create a peering connection between a backing services VPC and a VPC created by Kops
+- [terraform-aws-dynamic-subnets](https://github.com/rei-devopsplatform/terraform-aws-dynamic-subnets) - Terraform module for public and private subnets provisioning in existing VPC
+- [terraform-aws-multi-az-subnets](https://github.com/rei-devopsplatform/terraform-aws-multi-az-subnets) - Terraform module for multi-AZ public and private subnets provisioning
+- [terraform-aws-named-subnets](https://github.com/rei-devopsplatform/terraform-aws-named-subnets) - Terraform module for named subnets provisioning.
 
 
 
@@ -149,7 +149,7 @@ Check out these related projects.
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/cloudposse/terraform-aws-vpc/issues), send us an [email][email] or join our [Slack Community][slack].
+File a GitHub [issue](https://github.com/rei-devopsplatform/terraform-aws-vpc/issues), send us an [email][email] or join our [Slack Community][slack].
 
 [![README Commercial Support][readme_commercial_support_img]][readme_commercial_support_link]
 
@@ -188,7 +188,7 @@ Signup for [our newsletter][newsletter] that covers everything on our technology
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/cloudposse/terraform-aws-vpc/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/rei-devopsplatform/terraform-aws-vpc/issues) to report any bugs or file feature requests.
 
 ### Developing
 
@@ -303,10 +303,10 @@ Check out [our other projects][github], [follow us on twitter][twitter], [apply 
   [readme_footer_link]: https://cloudposse.com/readme/footer/link?repo=cloudposse/terraform-aws-vpc
   [readme_commercial_support_img]: https://cloudposse.com/readme/commercial-support/img?repo=cloudposse/terraform-aws-vpc
   [readme_commercial_support_link]: https://cloudposse.com/readme/commercial-support/link?repo=cloudposse/terraform-aws-vpc
-  [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-vpc&url=https://github.com/cloudposse/terraform-aws-vpc
-  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-vpc&url=https://github.com/cloudposse/terraform-aws-vpc
-  [share_reddit]: https://reddit.com/submit/?url=https://github.com/cloudposse/terraform-aws-vpc
-  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/cloudposse/terraform-aws-vpc
-  [share_googleplus]: https://plus.google.com/share?url=https://github.com/cloudposse/terraform-aws-vpc
-  [share_email]: mailto:?subject=terraform-aws-vpc&body=https://github.com/cloudposse/terraform-aws-vpc
+  [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-aws-vpc&url=https://github.com/rei-devopsplatform/terraform-aws-vpc
+  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-aws-vpc&url=https://github.com/rei-devopsplatform/terraform-aws-vpc
+  [share_reddit]: https://reddit.com/submit/?url=https://github.com/rei-devopsplatform/terraform-aws-vpc
+  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/rei-devopsplatform/terraform-aws-vpc
+  [share_googleplus]: https://plus.google.com/share?url=https://github.com/rei-devopsplatform/terraform-aws-vpc
+  [share_email]: mailto:?subject=terraform-aws-vpc&body=https://github.com/rei-devopsplatform/terraform-aws-vpc
   [beacon]: https://ga-beacon.cloudposse.com/UA-76589703-4/cloudposse/terraform-aws-vpc?pixel&cs=github&cm=readme&an=terraform-aws-vpc
